@@ -24,7 +24,7 @@ export default function Nav() {
     return (
         <nav className={'fixed w-full h-20 z-30 dark:bg-slate-900 bg-slate-100 ' + (isShadow && 'shadow-lg')}>
             {/* Top bar with spread options or menu button*/}
-            <div className='relative flex justify-between items-center w-full h-full px-2 z-20 dark:bg-slate-900 bg-slate-100'>
+            <div className='relative flex justify-between items-center w-full h-full px-2 z-20 dark:bg-gray-900 bg-slate-100'>
                 <Link href='/#home' scroll={false} onClick={() => isOpen && setIsOpen(false)}>Adam</Link>
                 <div>
                     <ul className='hidden md:flex md:gap-12'>
