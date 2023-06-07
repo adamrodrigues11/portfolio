@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { TbMoon, TbSun, TbCircle } from 'react-icons/tb'
+import { TbMoon, TbSun } from 'react-icons/tb'
 
 const ThemeToggle = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,14 +19,14 @@ const ThemeToggle = () => {
 
   if (!mounted) {
     return (
-        <div className="hidden md:block">
-            <TbCircle size={25} />
+        <div className='cursor-pointer'>
+            <TbMoon size={25} />
         </div>
     );
   }
 
   return (
-    <div className="hidden md:block">
+    <div className='cursor-pointer hover:scale-105 transition'>
       {theme === "dark" ? (
         <TbSun size={25} onClick={() => setTheme("light")} />
         ) : (
