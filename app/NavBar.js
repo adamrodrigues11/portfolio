@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import ResumeButton from './ResumeButton';
 import ThemeToggle from './ThemeToggle';
 import Socials from './Socials';
 import Image from 'next/image';
@@ -57,9 +58,7 @@ export default function NavBar() {
                 </div>
                 {/* Resume Link and Theme Toggle */}
                 <div className='hidden md:flex items-center gap-4'>
-                    <button className='cursor-pointer rounded-md bg-slate-400 py-1 px-2 text-sm uppercase hover:scale-105 transition'>
-                        <a href='https://drive.google.com/file/d/1yXCIf1pUQH_SsCzSyxjzrg_tG21L7xZW/view?usp=drive_link' target='_blank' rel='noreferrer'>Resume</a>
-                    </button>
+                    <ResumeButton />
                     <ThemeToggle />
                 </div>
                 {/* Mobile menu button */}
@@ -91,9 +90,7 @@ export default function NavBar() {
                 </ul>
                 <div className='flex flex-col gap-6 items-end justify-between'>
                     <ThemeToggle />
-                    <button className='cursor-pointer rounded-md bg-slate-400 w-fit py-1 px-2 text-sm uppercase hover:scale-105 transition'>
-                        <a href='https://drive.google.com/file/d/1yXCIf1pUQH_SsCzSyxjzrg_tG21L7xZW/view?usp=drive_link' target='_blank' rel='noreferrer'>Resume</a>
-                    </button>
+                    <ResumeButton />
                     <Socials gap={4} />
                 </div>
             </div>
