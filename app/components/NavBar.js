@@ -7,8 +7,8 @@ import ResumeButton from './ResumeButton';
 import ThemeToggle from './ThemeToggle';
 import Socials from './Socials';
 import Image from 'next/image';
-import lightModeLogo from '../public/images/light-mode-logo.gif';
-import darkModeLogo from '../public/images/dark-mode-logo.gif';
+import lightModeLogo from '../../public/images/light-mode-logo.gif';
+import darkModeLogo from '../../public/images/dark-mode-logo.gif';
 import { useTheme } from 'next-themes';
 
 export default function NavBar() {
@@ -51,6 +51,9 @@ export default function NavBar() {
                         <Link href='/#about' scroll={false}>
                             <li className='text-sm uppercase border-b border-b-transparent hover:border-b-pink-600'>About</li>
                         </Link>
+                        <Link href='/#skills' scroll={false}>
+                            <li className='text-sm uppercase border-b border-b-transparent hover:border-b-pink-600'>Skills</li>
+                        </Link>
                         <Link href='/#projects' scroll={false}>
                             <li className='text-sm uppercase border-b border-b-transparent hover:border-b-pink-600'>Projects</li>
                         </Link>
@@ -83,6 +86,9 @@ export default function NavBar() {
                     </Link>
                     <Link href='/#about' scroll={false}>
                         <li className='text-sm w-fit uppercase border-b border-b-transparent hover:border-b-pink-600' onClick={() => setIsOpen(!isOpen)}>About</li>
+                    </Link>
+                    <Link href='/#skills' scroll={false}>
+                        <li className='text-sm w-fit uppercase border-b border-b-transparent hover:border-b-pink-600' onClick={() => setIsOpen(!isOpen)}>Skills</li>
                     </Link>
                     <Link href='/#projects' scroll={false}>
                         <li className='text-sm w-fit uppercase border-b border-b-transparent hover:border-b-pink-600' onClick={() => setIsOpen(!isOpen)}>Projects</li>
