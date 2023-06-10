@@ -10,6 +10,10 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(125px, 1fr));',
+        'auto-fit-350': 'repeat(auto-fit, minmax(350px, 1fr));',
+      },
+      maxWidth: {
+        'project-card': '500px',
       },
       keyframes: {
         bounce: {
