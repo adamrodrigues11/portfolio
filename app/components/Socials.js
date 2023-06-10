@@ -2,9 +2,9 @@ import { FiMail } from 'react-icons/fi'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
 import { linkedIn, github, email } from '../data/Links'
 
-export default function Socials({ gap, borderClasses }) {
+export default function Socials({ borderClasses }) {
     return (
-        <div className={`flex justify-center items-center gap-${gap}`}>
+        <>
             <a 
                 href={linkedIn} 
                 target='_blank' 
@@ -27,6 +27,6 @@ export default function Socials({ gap, borderClasses }) {
             >
                 <FiMail size={25} />
             </a>
-        </div>
+        </>
     )
 }
