@@ -7,7 +7,7 @@ export default function Collapsible({
   title,
   children,
   startOpen = true,
-  containerClasses = "w-12/12 mx-auto my-4 p-4 border border-gray-500 rounded-sm flex flex-col",
+  containerClasses = "w-full mx-auto py-2 rounded-sm flex flex-col",
 }) {
   const [isOpen, setIsOpen] = useState(startOpen);
   const [height, setHeight] = useState(startOpen ? undefined : 0);
@@ -33,13 +33,13 @@ export default function Collapsible({
 
   return (
     <div className={containerClasses}>
-      <div className="flex flex-row justify-between">
-        <h3 className="text-xl font-bold">{title}</h3>
-        <div onClick={() => setIsOpen(!isOpen)}>
+      <div className="flex flex-row justify-start gap-2 items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+        <h3 className="font-bold">{title}</h3>
+        <div>
             {isOpen ? (
-                <FaChevronCircleUp className="text-2xl text-pink-600 cursor-pointer" />
+                <FaChevronCircleUp className="text-2xl text-pink-600" />
                 ) : (
-                <FaChevronCircleDown className="text-2xl text-pink-600 cursor-pointer" />
+                <FaChevronCircleDown className="text-2xl text-pink-600" />
                 )
             }  
         </div>

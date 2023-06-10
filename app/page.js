@@ -5,6 +5,8 @@ import skiPortrait from '../public/images/ski-portrait.jpg'
 import Socials from './components/Socials'
 import Skills from './components/Skills'
 import BackToTop from './components/BackToTop'
+import projects from './data/Projects'
+import Collapsible from './components/Collapsible'
 
 
 export default function HomePage() {
@@ -35,9 +37,22 @@ export default function HomePage() {
         <Skills />
       </section>
       <section id="projects" className="pt-24">
-        {/* maybe do grid instead of flex */}
         <h2 className="text-3xl font-bold">Projects</h2>
-        <p>Projects will go here with title, screencast video or image as thumbnail, clickable to github repo. Technologies tags. Collapsible with description</p>
+        {projects.map((project, index) => (
+          <div key={index} className='flex flex-col items-start gap-6 py-6'>
+            <h3 className='text-xl font-bold'>{project.title}</h3>
+            <p>Image will go here</p>
+            <div className='flex flex-row flex-wrap items-center gap-2'>
+              {project.technologies.map((tech, index) => (
+                <div key={index} className='text-sm border border-slate-500 rounded-md p-1'>{tech}</div>
+              ))}
+            </div>
+            <Collapsible title='Description'>
+              <p className='text-sm sm:text-base'>{project.description}</p>
+            </Collapsible>
+          
+          </div>
+        ))}
       </section>
     </main>
     <footer className='flex flex-col items-center border-t border-slate-500 p-4'>
