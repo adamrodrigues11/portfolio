@@ -6,7 +6,7 @@ import { useState, useRef, useEffect } from "react";
 export default function Collapsible({
   title,
   children,
-  startOpen = true,
+  startOpen = false,
   containerClasses = "w-full mx-auto py-2 rounded-sm flex flex-col",
 }) {
   const [isOpen, setIsOpen] = useState(startOpen);
@@ -33,13 +33,13 @@ export default function Collapsible({
 
   return (
     <div className={containerClasses}>
-      <div className="flex flex-row justify-start gap-2 items-center cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
+      <div className="flex flex-row w-fit justify-start gap-2 items-center cursor-pointer group" onClick={() => setIsOpen(!isOpen)}>
         <h3 className="font-bold">{title}</h3>
         <div>
             {isOpen ? (
-                <FaChevronCircleUp className="text-2xl text-pink-600" />
+                <FaChevronCircleUp className="text-2xl text-pink-600 group-hover:animate-bounce" />
                 ) : (
-                <FaChevronCircleDown className="text-2xl text-pink-600" />
+                <FaChevronCircleDown className="text-2xl text-pink-600 group-hover:animate-bounce" />
                 )
             }  
         </div>
