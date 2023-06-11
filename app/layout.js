@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
           <Providers>
             <NavBar />
-            <div >{children}</div>
+            <div className='py-24 px-4 mx-auto sm:w-10/12 xl:8/12'>{children}</div>
             <Footer />
           </Providers>
           <BackToTop />

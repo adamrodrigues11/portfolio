@@ -7,7 +7,7 @@ import Projects from './sections/Projects'
 
 export default function HomePage() {
   return (
-    <main className="py-24 px-4 mx-auto sm:w-10/12 xl:8/12">
+    <main>
       <Home />
       <About />
       <Skills />

@@ -1,5 +1,5 @@
 'use client';
-import data from '../data/Skills.json';
+import data from '../data/skills.json';
 import Image from 'next/image';
 import React from 'react';
 

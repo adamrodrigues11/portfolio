@@ -8,6 +8,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scale: {
+        102: '1.02',
+      },
+      blur: {
+        xs: '1px',
+      },
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(125px, 1fr));',
         'auto-fit-350': 'repeat(auto-fit, minmax(350px, 1fr));',
