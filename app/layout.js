@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import Providers from './components/Providers'
-import BackToTop from './components/BackToTop'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +20,6 @@ export default function RootLayout({ children }) {
             <div className='py-24 px-4 mx-auto sm:w-10/12 xl:8/12'>{children}</div>
             <Footer />
           </Providers>
-          <BackToTop />
       </body>
     </html>
   )

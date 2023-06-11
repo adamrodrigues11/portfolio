@@ -23,13 +23,13 @@ export default function Skills() {
                 </div>
                 <div className='grid grid-cols-auto-fit gap-4'>
                     {skills.filter((skill) => category === null || skill.category === category).map((skill) => (
-                        <div key={skill.name} className='flex flex-col items-center justify-center p-4 rounded-md shadow-md bg-slate-200 dark:bg-slate-700'>
+                        <div key={skill.name} className='flex flex-col items-center justify-center p-2 sm:p-4 rounded-md shadow-md bg-slate-200 dark:bg-slate-700'>
                             <Image 
                                 key={skill.name}
                                 src={`/images/skills/${skill.icon}.png`}
                                 alt={skill.name}
-                                width={64}
-                                height={64}
+                                width={50}
+                                height={50}
                             />
                             <div className='text-sm sm:text-base'>{skill.name}</div>
                         </div>

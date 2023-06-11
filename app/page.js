@@ -1,4 +1,5 @@
 import Socials from './components/Socials'
+import BackToTop from './components/BackToTop'
 
 import Home from './sections/Home'
 import About from './sections/About'
@@ -12,6 +13,7 @@ export default function HomePage() {
       <About />
       <Skills />
       <Projects />  
+      <BackToTop />
     </main>
   )
 }

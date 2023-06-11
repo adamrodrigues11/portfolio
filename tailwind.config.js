@@ -21,7 +21,7 @@ module.exports = {
         '3-1': '3fr 1fr',
       },
       maxWidth: {
-        'project-card': '500px',
+        'project-card': '400px',
       },
       keyframes: {
         bounce: {
