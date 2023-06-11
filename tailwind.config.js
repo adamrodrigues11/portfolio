@@ -17,6 +17,8 @@ module.exports = {
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(125px, 1fr));',
         'auto-fit-350': 'repeat(auto-fit, minmax(350px, 1fr));',
+        '2-1': '2fr 1fr',
+        '3-1': '3fr 1fr',
       },
       maxWidth: {
         'project-card': '500px',
