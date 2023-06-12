@@ -10,5 +10,9 @@ html {
   body {
     @apply dark:bg-slate-900 bg-slate-50 dark:text-slate-50 text-slate-900;
   }
+
+  p {
+    @apply pt-2;
+  }
 }
 

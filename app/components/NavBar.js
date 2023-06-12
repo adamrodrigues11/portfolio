@@ -97,7 +97,9 @@ export default function NavBar() {
                 <div className='flex flex-col gap-6 items-end justify-between'>
                     <ThemeToggle />
                     <ResumeButton />
-                    <Socials gap={4} />
+                    <div className='flex flex-row justify-end gap-4 items-center'>
+                        <Socials />
+                    </div>
                 </div>
             </div>
         </nav>

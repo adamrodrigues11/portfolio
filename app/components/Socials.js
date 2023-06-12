@@ -1,12 +1,12 @@
 import { FiMail } from 'react-icons/fi'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import { linkedIn, github, email } from '../data/Links'
+import links from '../data/links.json'
 
-export default function Socials({ gap, borderClasses }) {
+export default function Socials({ borderClasses }) {
     return (
-        <div className={`flex justify-center items-center gap-${gap}`}>
+        <>
             <a 
-                href={linkedIn} 
+                href={links.linkedIn} 
                 target='_blank' 
                 rel='noreferrer' 
                 className={'hover:scale-105 transition' + (borderClasses && ' ' + borderClasses)}
@@ -14,7 +14,7 @@ export default function Socials({ gap, borderClasses }) {
                 <FaLinkedinIn size={25} />
             </a>
             <a 
-                href={github}
+                href={links.github}
                 target='_blank' 
                 rel='noreferrer'
                 className={'hover:scale-105 transition' + (borderClasses && ' ' + borderClasses)}
@@ -22,11 +22,11 @@ export default function Socials({ gap, borderClasses }) {
                 <FaGithub size={25} />
             </a>
             <a 
-                href={'mailto:' + email}
+                href={'mailto:' + links.email}
                 className={'hover:scale-105 transition' + (borderClasses && ' ' + borderClasses)}
             >
                 <FiMail size={25} />
             </a>
-        </div>
+        </>
     )
 }
