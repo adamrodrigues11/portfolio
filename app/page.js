@@ -8,7 +8,11 @@ import Projects from './sections/Projects'
 
 export default function HomePage() {
   return (
-    <main>
+    <main style={
+      {
+        scrollBehavior: 'smooth!important'
+      }
+    }>
       <Home />
       <About />
       <Skills />
