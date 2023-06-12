@@ -19,11 +19,9 @@ export default function BackToTop() {
     useEffect(() => {
         const handleScroll = () => {
             let currentScrollTop = document.documentElement.scrollTop;
-            if ( currentScrollTop < scrollTop) {
-                // scrolling up
-                if (window.scrollY > 0.5 * window.innerHeight) {
-                    setShouldShow(true);
-                }
+            // if scrolling up and scroll height is in the bottom 2/3 of the screen, show the button
+            if ( currentScrollTop < scrollTop && window.scrollY > ( 2 / 3 ) * window.innerHeight) {
+                setShouldShow(true);
             } else {
                 setShouldShow(false);
             }

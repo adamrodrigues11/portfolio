@@ -1,3 +1,5 @@
+// Saved for possible future use. Currently not in use.
+
 'use client';
 
 import { BsFillArrowLeftCircleFill } from 'react-icons/bs';
