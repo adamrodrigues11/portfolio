@@ -1,6 +1,3 @@
-import Socials from './components/Socials'
-import BackToTop from './components/BackToTop'
-
 import Home from './sections/Home'
 import About from './sections/About'
 import Skills from './sections/Skills'
@@ -17,7 +14,6 @@ export default function HomePage() {
       <About />
       <Skills />
       <Projects />  
-      <BackToTop />
     </main>
   )
 }

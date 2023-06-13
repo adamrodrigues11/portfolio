@@ -4,6 +4,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import Providers from './components/Providers'
 import { useEffect } from 'react'
 import { usePathname } from 'next/navigation'
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
             <NavBar />
             <div className='py-24 px-4 mx-auto sm:w-10/12 xl:8/12'>{children}</div>
             <Footer />
+            <BackToTop />
           </Providers>
       </body>
     </html>

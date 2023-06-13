@@ -9,18 +9,15 @@ export default function BackToTop() {
     const [scrollTop, setScrollTop] = useState(0); 
     const [shouldShow, setShouldShow] = useState(false);
 
-    function scrollToId(id) {
-        const element = document.getElementById(id);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-        }
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     useEffect(() => {
         const handleScroll = () => {
             let currentScrollTop = document.documentElement.scrollTop;
-            // if scrolling up and scroll height is in the bottom 2/3 of the screen, show the button
-            if ( currentScrollTop < scrollTop && window.scrollY > ( 2 / 3 ) * window.innerHeight) {
+            // if scrolling up and scroll height is more than 200, show the button
+            if ( currentScrollTop < scrollTop && window.scrollY > 200) {
                 setShouldShow(true);
             } else {
                 setShouldShow(false);
@@ -35,7 +32,7 @@ export default function BackToTop() {
         <>
         {shouldShow && 
             <div className='fixed bottom-4 right-4 z-10'>
-                <button className='animate-bounce-slow rounded-full opacity-80 shadow-md hover:scale-105 transition' onClick={() => scrollToId('home')}>
+                <button className='animate-bounce-slow rounded-full opacity-80 shadow-md hover:scale-105 transition' onClick={() => scrollToTop()}>
                     <BsFillArrowUpCircleFill size={50} />
                 </button>
             </div>
