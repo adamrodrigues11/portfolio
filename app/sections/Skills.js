@@ -12,7 +12,7 @@ export default function Skills() {
             <div className='mx-auto my-4'>
                 <div className='flex justify-start items-center gap-2 py-4'>
                     <div className='hidden sm:inline-flex'>Category:&nbsp;</div>
-                    <select className='p-2 rounded-md' onChange={(e) => setCategory(e.target.value ? Number(e.target.value) : null)}>
+                    <select className='p-2 rounded-md bg-slate-200 dark:bg-slate-700' onChange={(e) => setCategory(e.target.value ? Number(e.target.value) : null)}>
                         <option value={''}>All</option>
                         {categories.map((category) => (
                             <option key={category.id} value={category.id}>{category.name}</option>
