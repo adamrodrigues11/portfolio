@@ -5,7 +5,7 @@ export default function ProjectDetails() {
     const project = projects.find((project) => project.slug === 'agilitek-solutions');
     return(
         <main>
-            <h2 className="text-3xl text-center font-bold">{project.title}</h2>
+            <h2 className="text-center">{project.title}</h2>
             <h3 className="text-lg text-center">{project.category}</h3>
             <h4 className="mt-4 text-lg font-bold">About the Application</h4>
             <div className="my-4 flex flex-wrap gap-4 xl:flex-nowrap xl:justify-between">
