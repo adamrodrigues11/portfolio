@@ -1,7 +1,18 @@
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
+import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
-export default function ProjectDetailsLayout({ children }) {
+export default function ProjectDetailsLayout({ children }) { 
+  // Temporary workaround for an unresolved bug in nextjs where the page does not scroll to the top when navigating to a new page
+  // if smooth scrolling is enabled. See https://github.com/vercel/next.js/issues/28778
+  const pathname = usePathname()
+  useEffect(() => {
+    if (pathname.startsWith('/projects')) {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname])
+
   return (
     <div>
         <Link href='/#projects' scroll={false}>
