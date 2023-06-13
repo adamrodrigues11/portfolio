@@ -34,7 +34,7 @@ export default function Collapsible({
   return (
     <div className={containerClasses}>
       <div className="flex flex-row w-fit justify-start gap-2 items-center cursor-pointer group" onClick={() => setIsOpen(!isOpen)}>
-        <h3 className="font-bold">{title}</h3>
+        <p className="text-lg font-bold">{title}</p>
         <div>
             {isOpen ? (
                 <FaChevronCircleUp className="text-2xl text-pink-600 group-hover:animate-bounce" />
