@@ -27,9 +27,7 @@
         "demoLogin": {
             "email": "admin@home.com",
             "password": "P@ssw0rd!"
-        },
-        "appDetails": "For one of my larger projects in the Software Systems Developer program at BCIT, I worked in a team of four to develop a fully-featured website and ticket management system for a mock music festival. The goal of the project was to create a website using ASP.NET Core MVC and MS SQL that would allow for recurring revenue generation. The website allows users to browse artists for the current festival and purchase tickets via PayPal. It also includes an admin dashboard for managing festivals, ticket types, and viewing sales data.",
-        "roleDetails": "As the database lead, my main responsibilities included devising a normalized database schema for the application (see ERD), and implementing the database using MS SQL and Entity Framework. My goal was to create a database structure that would allow for re-use of ticket types in several festivals, but with a specific alloted quantity of each type for a given festival. Additionally, Microsoft Identity Framework was used to generate the default authorization tables for the application; these are connected to the custom schema via the unique email address of each user. I also contributed to the development of the UI using Razor Pages and Bootstrap, and deployed the database and application to Azure."
+        }
     },
     {
         "id": "1",
@@ -59,8 +57,6 @@
         "demoLogin": {
             "email": "agilitek",
             "password": "Agilitek2023!"
-        },
-        "appDetails": "In the final month of the Software Systems Developer program at BCIT, I completed a project sponsored by a local digital consulting company, Agilitek Solutions. My team built a data explorer and tool for analyzing correlations in an anonymized customer dataset with 100,000's of transaction records. The application allows an analyst to group customers into custom segments based on their demographics or transaction records in order to generate targeted comparisons and marketing insights.",
-        "roleDetails": "My main responsibilities included leading the design and implementation of the segment details page and contributing to the design of the overall application architecture. The main requirments of the segment details page were the ability to quickly visualize the overlap of the selected segments with other existing segments, and to browse the customers that belonged to the selected segment. I implemented these features through an interactive bar chart showing % overlap (with filtering based on segment size and custom selections) and a customer table using server-side pagination. With respect to the overall application architecture, the goal was to create a secure way to interface with the existing databse hosted in AWS RDS with minimal cost for the proof of concept. As such, we decided to build our backend as serverless Lambda functions integrated into an API Gateway which we could make requests to from our client-side application which would be distrubted by a Cloudfront CDN. All the AWS services were set up using SST, a modern framework for serverless development."
+        }
     }
 ]
