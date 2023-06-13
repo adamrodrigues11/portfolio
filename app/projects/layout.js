@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link';
 import { FiArrowLeft } from 'react-icons/fi';
 import { useEffect } from 'react';
