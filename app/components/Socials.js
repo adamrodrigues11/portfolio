@@ -1,6 +1,6 @@
 import { FiMail } from 'react-icons/fi'
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa'
-import links from '../data/links'
+import links from '../data/links.json'
 
 export default function Socials({ borderClasses }) {
     return (
