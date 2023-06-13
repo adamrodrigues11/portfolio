@@ -9,7 +9,7 @@ export default function About() {
             <Collapsible title='My Story'>
                 <p>Mathematical physics &mdash;&gt; teaching &mdash;&gt; programming.</p>
                 <p>My diverse academic and professional background has equipped me with the skills and experience to approach novel problems with unique insights. After completing a BSc. in Mathematical Physics at the University of Waterloo, I pursued a profession in teaching. In the past 5 years, I earned a BEd. from UBC and have helped hundreds of students master concepts in physics, mathematics, and chemistry.</p>
-                <p>So why become a developer? Firstly, I am a <span className='text-pink-600'>learner</span>, a <span className='text-pink-600'>deep thinker</span>, and a <span className='text-pink-600'>creator</span>. I want my work to involve new challenges and constant learning, and to leverage technology to improve the way we teach, learn, and live. 've been programming as a hobby for several years, and now I'm excited to finally make a career change.</p>
+                <p>So why become a developer? Firstly, I am a <span className='text-pink-600'>learner</span>, a <span className='text-pink-600'>deep thinker</span>, and a <span className='text-pink-600'>creator</span>. I want my work to involve new challenges and constant learning, and to leverage technology to improve the way we teach, learn, and live. I&apos;ve been programming as a hobby for several years, and now I&apos;m excited to finally make a career change.</p>
             </Collapsible>
             <Link href='/#projects' scroll={false} className='underline font-bold'><p>Check out some of my latest projects</p></Link>
         </section>
