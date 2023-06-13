@@ -1,12 +1,10 @@
 'use client';
-import data from '../data/skills.json';
+import { skills, categories } from '../data/skills';
 import Image from 'next/image';
 import React from 'react';
 
 export default function Skills() {
     const [category, setCategory] = React.useState(null);
-
-    const { categories, skills } = data;
 
     return (
         <section id="skills" className="pt-24">   

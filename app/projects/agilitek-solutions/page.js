@@ -1,4 +1,4 @@
-import projects from '../../data/projects.json'
+import projects from '../../data/projects.js'
 import Image from 'next/image';
 
 export default function ProjectDetails() {
