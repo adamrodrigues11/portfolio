@@ -15,7 +15,7 @@ export default function ProjectDetails() {
                             <div key={index} className="text-sm border border-slate-500 rounded-md p-0.5">{tech}</div>
                         ))}
                     </div>
-                    <p>For one of my larger projects in the Software Systems Developer program at BCIT, I worked in a team of four to develop a fully-featured website and ticket management system for a mock music festival. The goal of the project was to create a website using ASP.NET Core MVC and MS SQL that would allow for recurring revenue generation. The website allows users to browse artists for the current festival and purchase tickets via PayPal. It also includes an admin dashboard for managing festivals, ticket types, and viewing sales data.</p>
+                    <p>For one of my projects in the Software Systems Developer program at BCIT, I worked in a team of four to develop a fully-featured website and ticket management system for a mock music festival. The goal of the project was to create a website using ASP.NET Core MVC and MS SQL that would allow for recurring revenue generation. The website allows users to browse artists for the current festival and purchase tickets via PayPal. It also includes an admin dashboard for managing festivals, ticket types, and viewing sales data. Roles and authorization are managed through Microsoft Identity Framework.</p>
                 </div>
                 <div className='flex flex-row flex-wrap justify-center place-items-center gap-6 xl:justify-start'>
                     <button className='text-lg bg-slate-200 dark:bg-slate-700 py-2 sm:py-4 px-4 sm:px-8 rounded-lg shadow-md hover:scale-102 group'>
