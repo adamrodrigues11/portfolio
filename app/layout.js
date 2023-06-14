@@ -4,6 +4,7 @@ import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 import BackToTop from './components/BackToTop'
 import Providers from './components/Providers'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +19,10 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
           <Providers>
             <NavBar />
-            <div className='py-24 px-4 mx-auto sm:w-10/12 xl:w-8/12'>{children}</div>
+            <div className='py-24 px-4 mx-auto sm:w-10/12 xl:w-8/12'>
+              {children}
+              <Analytics />
+            </div>
             <Footer />
             <BackToTop />
           </Providers>
