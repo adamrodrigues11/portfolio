@@ -23,16 +23,6 @@ export const categories = [
 
 export const skills = [
 {
-    name: "HTML",
-    icon: "html",
-    category: null
-},
-{
-    name: "CSS",
-    icon: "css",
-    category: null
-},
-{
     name: "JavaScript",
     icon: "javascript",
     category: 0
@@ -48,13 +38,18 @@ export const skills = [
     category: 0
 },
 {
-    name: "Swift",
-    icon: "swift",
+    name: "HTML",
+    icon: "html",
     category: 0
 },
 {
-    name: "Kotlin",
-    icon: "kotlin",
+    name: "CSS",
+    icon: "css",
+    category: 0
+},
+{
+    name: "Sass/SCSS",
+    icon: "sass",
     category: 0
 },
 {
@@ -65,6 +60,11 @@ export const skills = [
 {
     name: "Next.js",
     icon: "next",
+    category: 1
+},
+{
+    name: "Angular",
+    icon: "angular",
     category: 1
 },
 {
@@ -88,8 +88,8 @@ export const skills = [
     category: 1
 },
 {
-    name: "MongoDB",
-    icon: "mongodb",
+    name: "MS SQL",
+    icon: "mssql",
     category: 2
 },
 {
@@ -103,8 +103,8 @@ export const skills = [
     category: 2
 },
 {
-    name: "MS SQL",
-    icon: "mssql",
+    name: "MongoDB",
+    icon: "mongodb",
     category: 2
 },
 {
