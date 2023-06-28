@@ -4,11 +4,11 @@ import Link from 'next/link';
 
 export default function NotFound() {
     return (
-        <div className='flex flex-col justify-center items-center h-screen'>
-            <h1 className='text-5xl font-bold'>404</h1>
-            <h2 className='text-2xl'>Page Not Found</h2>
+        <div className='flex flex-col justify-center items-center h-screen gap-12'>
+            <h2>Page Not Found</h2>
+            <p>This page might exist in a parallel universe, but unfortunately it does not in this one.</p>
             <Link href='/#home' className='text-xl text-blue-500 hover:underline'>
-                Back to Home
+                Take Me Back Home
             </Link>
         </div>
     )
