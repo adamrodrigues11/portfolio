@@ -19,7 +19,7 @@ export default function ProjectDetails() {
                         In the final month of the Software Systems Developer program at BCIT, I completed a project sponsored by a local digital consulting company, <a href="https://agiliteksolutions.com/" target='_blank' rel='noreferrer' className='text-pink-500 hover:underline'>Agilitek Solutions</a>. My team built a data explorer and tool for analyzing correlations in an anonymized customer dataset with 100,000&apos;s of transaction records. The application allows an analyst to group customers into custom segments based on their demographics or transaction records in order to generate targeted comparisons and marketing insights.
                     </p>
                 </div>
-                <div className='flex flex-row flex-wrap justify-center place-items-center gap-6 xl:justify-start'>
+                {/* <div className='flex flex-row flex-wrap justify-center place-items-center gap-6 xl:justify-start'>
                     <button className='text-lg bg-slate-200 dark:bg-slate-700 py-2 sm:py-4 px-4 sm:px-8 rounded-lg shadow-md hover:scale-102 group'>
                         <a className='border-b border-transparent group-hover:border-pink-500' href={project.links.demo} target='_blank' rel='noreferrer'>Demo</a>
                     </button>
@@ -27,7 +27,7 @@ export default function ProjectDetails() {
                         <div className='text-sm sm:text-base'><span className='font-bold'>Email/Username:&nbsp;</span>{project.demoLogin.email}</div>
                         <div className='text-sm sm:text-base'><span className='font-bold'>Password:&nbsp;</span>{project.demoLogin.password}</div>
                     </div>
-                </div>
+                </div> */}
             </div>
             <h4 className="mt-4 text-lg font-bold">My Role</h4>
             <p className='max-w-2xl'>My main responsibilities included leading the design and implementation of the segment details page and contributing to the design of the overall application architecture.</p>
