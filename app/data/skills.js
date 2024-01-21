@@ -23,8 +23,8 @@ export const categories = [
 
 export const skills = [
 {
-    name: "JavaScript",
-    icon: "javascript",
+    name: "Typescript",
+    icon: "typescript",
     category: 0
 },
 {
@@ -47,11 +47,11 @@ export const skills = [
     icon: "css",
     category: 0
 },
-{
-    name: "Sass/SCSS",
-    icon: "sass",
-    category: 0
-},
+// {
+//     name: "Sass/SCSS",
+//     icon: "sass",
+//     category: 0
+// },
 {
     name: "React.js",
     icon: "react",
@@ -82,13 +82,13 @@ export const skills = [
     icon: "tailwind",
     category: 1
 },
+// {
+//     name: "Bootstrap",
+//     icon: "bootstrap",
+//     category: 1
+// },
 {
-    name: "Bootstrap",
-    icon: "bootstrap",
-    category: 1
-},
-{
-    name: "MS SQL",
+    name: "MS SQL Server",
     icon: "mssql",
     category: 2
 },
@@ -97,16 +97,16 @@ export const skills = [
     icon: "postgresql",
     category: 2
 },
-{
-    name: "MySQL",
-    icon: "mysql",
-    category: 2
-},
-{
-    name: "MongoDB",
-    icon: "mongodb",
-    category: 2
-},
+// {
+//     name: "MySQL",
+//     icon: "mysql",
+//     category: 2
+// },
+// {
+//     name: "MongoDB",
+//     icon: "mongodb",
+//     category: 2
+// },
 {
     name: "Git",
     icon: "git",
@@ -122,9 +122,9 @@ export const skills = [
     icon: "aws",
     category: 4
 },
-{
-    name: "Azure",
-    icon: "azure",
-    category: 4
-}
+// {
+//     name: "Azure",
+//     icon: "azure",
+//     category: 4
+// }
 ]
